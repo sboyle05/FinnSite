@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="styles2.css">
+        <title>Your Recommendations</title>
+    </head>
+    <body>
+        <div class="navbar">
+            <a href="intro.html">Meet Finnian</a></li>
+            <a href="action.html">Action Shots</a></li>
+            <a href="favorites.html">Finn's Favorites</a></li>
+            <a href="recommend.html">Recommend Something to Finn</a></li>
+        </div>
+        <h1 class="h1style">What would you recommend to Finn or his parents?</h1>
+
+        <form action="/form-handling-url" method="post">
+            <fieldset>
+                <legend>Your Info</legend>
+
+                <div class="div1">
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" name="first_name">
+                </div>
+                <div class="div1">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" name="last_name">
+                </div>
+                <div class="div1">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email_address">
+                </div>
+                <div class="div1">
+                    <label for="role">In my family, I am a;</label>
+                    <select id="role" name="family_member_type">
+                        <option value="mom">Mom</option>
+                        <option value="dad">Dad</option>
+                        <option value="grandma">Grandma</option>
+                        <option value="grandpa">Grandpa</option>
+                        <option value="aunt">Aunt</option>
+                        <option value="uncle">Uncle</option>
+                    </select>
+                </div>
+                <div class="div1">
+                    <label for="recommendation">What would you recommend?</label>
+                    <textarea id="recommendation" name="recommendation"></textarea>
+                </div>
+                <div>
+                    <button type="submit">Submit my recommendation</button>
+                </div>
+            </fieldset>
+        </form>
+    </body>
+</html>
